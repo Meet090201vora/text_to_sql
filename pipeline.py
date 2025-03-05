@@ -13,6 +13,7 @@ from pydantic import BaseModel
 class QueryRequest(BaseModel):
     user_query: str
 
+
 # Load environment variables
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
